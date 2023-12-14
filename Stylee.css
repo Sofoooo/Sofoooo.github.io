@@ -1,0 +1,109 @@
+/* Estilos generales */
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Media Queries */
+
+/* Para pantallas más pequeñas que 480px */
+@media only screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 1.2em;
+    }
+
+    main {
+        font-size: 0.8em;
+    }
+}
+
+/* Para pantallas entre 481px y 768px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+        background-color: #444;
+    }
+
+    nav a {
+        padding: 12px;
+        margin: 6px;
+        font-size: 16px;
+    }
+
+    main {
+        font-size: 1em;
+    }
+}
+
+/* Para pantallas entre 769px y 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    nav a {
+        padding: 15px;
+        margin: 7px;
+        font-size: 18px;
+    }
+
+    main {
+        font-size: 1.2em;
+    }
+}
+
+/* Puedes agregar otras reglas media query adicionales según sea necesario */
+@media only screen and (min-width: 1025px) {
+    /* Reglas para pantallas más grandes que 1024px */
+    header {
+        font-size: 2.5em;
+    }
+
+    nav a {
+        padding: 18px;
+        margin: 8px;
+        font-size: 20px;
+    }
+
+    main {
+        font-size: 1.5em;
+    }
+}
